@@ -72,14 +72,14 @@ theory: |
 
   ```javascript
   const answer = true;
-  console.log(!answer);  // => false
+  console.log(!answer); // => false
   ```
 
   При двойном отрицании `!!` итоговое значение равно начальному:
 
   ```javascript
   const answer = true;
-  console.log(!!answer);  // => true
+  console.log(!!answer); // => true
   ```
 
   Но здесь дополнительно происходят преобразования типа. Поэтому результатом двойного отрицания всегда будет _bool_. Этим приемом пользуются, чтобы поменять тип данных.
@@ -91,6 +91,14 @@ theory: |
 instructions: |
 
   Напишите функцию `isFalsy`, которая проверяет, трактуется ли переданное значение как ложное с точки зрения JavaScript. Для выполнения этой проверки вам понадобится сравнить `false` с переданным значением, используя `==`.
+
+  Примеры вызова:
+
+  ```javascript
+  isFalsy('   '); // true
+  isFalsy(false); // true
+  isFalsy(3);     // false
+  ```
 
 tips:
   - |

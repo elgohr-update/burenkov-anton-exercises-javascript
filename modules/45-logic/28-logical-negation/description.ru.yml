@@ -23,8 +23,8 @@ theory: |
   А что если написать так `!!isEven(10)`? Внезапно, но код сработает. В логике двойное отрицание подобно отсутствию отрицания вообще.
 
   ```javascript
-  isEven(10);  // true
-  !isEven(10); // false
+  isEven(10);   // true
+  !isEven(10);  // false
   !!isEven(10); // true
   ```
 
@@ -37,6 +37,13 @@ instructions: |
   2. `null` если щита нет. Строка `lion` если щит есть, и на нём изображен лев.
 
   Вам доступна уже готовая к использованию функция `isLannisterSoldier`. Можете воспользоваться ей чтобы не писать все логические условия заново.
+
+  Примеры вызова:
+
+  ```javascript
+  isNotLannisterSoldier('red', 'lion'); // false
+  isNotLannisterSoldier('blue', null);  // true
+  ```
 
 tips:
   - |

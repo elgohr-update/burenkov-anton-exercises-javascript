@@ -17,7 +17,7 @@ theory: |
     return 'normal';
   }
 
-  getTypeOfSentence('Hodor'); // normal
+  getTypeOfSentence('Hodor');  // normal
   getTypeOfSentence('Hodor?'); // question
   ```
 
@@ -42,7 +42,7 @@ theory: |
       return 'normal';
   }
 
-  console.log(getTypeOfSentence('Hodor')); // => normal
+  console.log(getTypeOfSentence('Hodor'));  // => normal
   console.log(getTypeOfSentence('Hodor?')); // => question
   ```
 
@@ -51,6 +51,13 @@ theory: |
 instructions: |
 
   Реализуйте функцию `getSentenceTone`, которая принимает строку и определяет тон предложения. Если все символы в верхнем регистре, то это вопль — `'scream'`. В ином случае — нормальное предложение — `'normal'`.
+
+  Примеры вызова:
+
+  ```javascript
+  getSentenceTone('Hello'); // normal
+  getSentenceTone('WOW');   // scream
+  ```
 
   Алгоритм:
 
