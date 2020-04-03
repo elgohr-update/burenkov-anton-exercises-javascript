@@ -1,3 +1,6 @@
+// @ts-check
+/* eslint operator-assignment: 0 */
+
 const printNumbers = (firstNumber) => {
   // BEGIN
   let i = firstNumber;
@@ -9,4 +12,4 @@ const printNumbers = (firstNumber) => {
   // END
 };
 
-module.exports = printNumbers;
+export default printNumbers;

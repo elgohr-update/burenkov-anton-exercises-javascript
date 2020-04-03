@@ -55,10 +55,8 @@ const calculateDistance = (source, dest) => {
   throw new Error(text);
 };
 
-const calculateDistanceBetweenTowns = param => calculateDistance(...param.split('-'));
+const calculateDistanceBetweenTowns = (param) => calculateDistance(...param.split('-'));
 
-const functions = {
+export {
   getParentFor, isLannisterSoldier, calculateDistance, calculateDistanceBetweenTowns,
 };
-
-module.exports = functions;
